@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaEnvelope, FaPhone } from "react-icons/fa";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
@@ -72,26 +73,46 @@ export default function Contact() {
         
         <div className="flex flex-col lg:flex-row gap-16">
 
-          {/* LEFT PANEL SAME */}
-          <motion.div className="flex-1 flex flex-col justify-center space-y-10">
-            <div className="space-y-4">
-              <h3 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                Let's build something amazing.
-              </h3>
-            </div>
+{/* LEFT PANEL */}
+<motion.div className="flex-1 flex flex-col justify-center space-y-10">
+  <div className="space-y-4">
+    <h3 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
+      Let's build something amazing.
+    </h3>
+  </div>
 
-            <div className="space-y-8 text-gray-300">
-              <a href="mailto:xyz@gmail.com" className="group flex items-center gap-6 p-4 rounded-2xl hover:bg-gray-800/40 border border-transparent hover:border-gray-700/50 transition-all duration-300 w-fit">
-                <div className="w-16 h-16 bg-gray-900/80 rounded-2xl flex items-center justify-center border border-gray-700/50">
-                  <span className="text-cyan-400 text-2xl font-bold">✉</span>
-                </div>
-                <div>
-                  <p className="text-sm text-gray-500 font-semibold mb-1">Email Me</p>
-                  <span className="text-xl font-bold">alisa.fansopkar@gmail.com</span>
-                </div>
-              </a>
-            </div>
-          </motion.div>
+  <div className="space-y-8 text-gray-300">
+
+    {/* Email Card */}
+    <a 
+      href="mailto:alisa.fansopkar@gmail.com" 
+      className="group flex items-center gap-6 p-4 rounded-2xl hover:bg-gray-800/40 border border-transparent hover:border-gray-700/50 transition-all duration-300 w-fit"
+    >
+      <div className="w-16 h-16 bg-gray-900/80 rounded-2xl flex items-center justify-center border border-gray-700/50 group-hover:border-cyan-500 group-hover:shadow-[0_0_25px_rgba(6,182,212,0.4)] transition-all duration-300 group-hover:-translate-y-1">
+        <FaEnvelope className="text-cyan-400 text-2xl" />
+      </div>
+      <div>
+        <p className="text-sm text-gray-500 font-semibold mb-1">Email Me</p>
+        <span className="text-xl font-bold">alisa.fansopkar@gmail.com</span>
+      </div>
+    </a>
+
+    {/* Mobile Card */}
+    <a 
+      href="tel:+919423230403" 
+      className="group flex items-center gap-6 p-4 rounded-2xl hover:bg-gray-800/40 border border-transparent hover:border-gray-700/50 transition-all duration-300 w-fit"
+    >
+      <div className="w-16 h-16 bg-gray-900/80 rounded-2xl flex items-center justify-center border border-gray-700/50 group-hover:border-violet-500 group-hover:shadow-[0_0_25px_rgba(139,92,246,0.4)] transition-all duration-300 group-hover:-translate-y-1">
+        <FaPhone className="text-violet-400 text-2xl" />
+      </div>
+      <div>
+        <p className="text-sm text-gray-500 font-semibold mb-1">Call Me</p>
+        <span className="text-xl font-bold">+91 9423230403</span>
+      </div>
+    </a>
+
+  </div>
+</motion.div>
 
           {/* FORM PANEL SAME UI */}
           <motion.div className="flex-1">

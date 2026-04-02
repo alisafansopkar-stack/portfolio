@@ -55,7 +55,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-semibold mb-1">Email Me</p>
-                  <span className="text-xl font-bold group-hover:text-cyan-400 transition-colors">xyz@gmail.com</span>
+                  <span className="text-xl font-bold group-hover:text-cyan-400 transition-colors">alisa.fansopkar@gmail.com</span>
                 </div>
               </a>
               
@@ -65,7 +65,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 font-semibold mb-1">Call Me</p>
-                  <span className="text-xl font-bold group-hover:text-violet-400 transition-colors">+91 234 567 890</span>
+                  <span className="text-xl font-bold group-hover:text-violet-400 transition-colors">+91 942 323 0403</span>
                 </div>
               </a>
             </div>

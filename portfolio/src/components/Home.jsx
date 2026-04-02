@@ -49,29 +49,24 @@ export default function Home() {
         </motion.p>
 
         <motion.div variants={itemVariants} className="mt-10 flex flex-wrap gap-6">
-          <motion.button 
+          <motion.a 
+            href="#projects"
             whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(6, 182, 212, 0.6)" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-8 py-3 rounded-full transition-all"
+            className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold px-8 py-3 rounded-full transition-all flex items-center justify-center cursor-pointer"
           >
             View Projects
-          </motion.button>
-          <motion.button 
-            whileHover={{ scale: 1.05, backgroundColor: "rgba(139, 92, 246, 0.1)", borderColor: "#8b5cf6", boxShadow: "0 0 25px rgba(139, 92, 246, 0.4)" }}
-            whileTap={{ scale: 0.95 }}
-            className="border-2 border-gray-500 text-gray-200 px-8 py-3 rounded-full transition-all font-bold"
-          >
-            Contact Me
-          </motion.button>
+          </motion.a>       
+          
           <motion.a 
             href="https://wa.me/919423230403"
             target="_blank"
             rel="noopener noreferrer"
-            whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(34, 197, 94, 0.6)" }}
+            whileHover={{ scale: 1.05, backgroundColor: "rgba(34, 197, 94, 0.1)", borderColor: "#22c55e", boxShadow: "0 0 25px rgba(34, 197, 94, 0.4)" }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center justify-center gap-2 bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-400 hover:to-emerald-500 text-white font-bold px-8 py-3 rounded-full transition-all"
+            className="border-2 border-gray-500 text-gray-200 px-8 py-3 rounded-full transition-all font-bold flex items-center justify-center gap-2 cursor-pointer"
           >
-            <FaWhatsapp size={22} />
+            <FaWhatsapp size={22} className="text-green-500" />
             WhatsApp Me
           </motion.a>
         </motion.div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import kaveriImage from '../assets/kaveri.webp';
 
 export default function Education() {
   return (
@@ -18,9 +19,14 @@ export default function Education() {
         <div className="grid gap-8 md:grid-cols-2">
           {/* Degree Card */}
           <div className="bg-gray-900/60 backdrop-blur-xl p-8 md:p-10 rounded-3xl shadow-[0_0_30px_rgba(0,0,0,0.5)] border border-gray-700 relative hover:border-cyan-500/50 transition-colors duration-500 group">
-            <div className="absolute top-0 right-0 w-1/2 h-1 bg-gradient-to-l from-cyan-400 to-transparent opacity-80 group-hover:opacity-100 transition-opacity rounded-tr-3xl"></div>
+            <div className="absolute top-0 right-0 w-1/2 h-1 bg-gradient-to-l from-cyan-400 to-transparent opacity-80 group-hover:opacity-100 transition-opacity rounded-tr-3xl z-10"></div>
             
-            <div className="flex flex-col gap-2">
+            <div className="mb-6 overflow-hidden rounded-2xl relative w-full h-48 border border-gray-700/50">
+              <img src={kaveriImage} alt="Kaveri College of Arts, Science, & Commerce" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent pointer-events-none"></div>
+            </div>
+            
+            <div className="flex flex-col gap-2 relative z-10">
               <span className="text-cyan-400 font-semibold tracking-wider text-sm md:text-base border border-cyan-400/30 bg-cyan-400/10 py-1 px-3 rounded-full w-fit mb-2">2023 - 2026</span>
               <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">Bachelors of Science in Computer Science</h3>
               <p className="text-xl text-gray-300 font-medium mt-2">Kaveri College of Arts, Science, & Commerce</p>

@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaDownload } from 'react-icons/fa';
+
 
 export default function About() {
   return (
@@ -22,6 +24,16 @@ export default function About() {
           <p className="text-gray-300 text-lg md:text-xl leading-relaxed font-light mt-6 text-left">
             I am always eager to learn new technologies and improve my skills. My goal is to deliver high-quality projects that make an impact and provide excellent user experiences. Let's create something amazing together!
           </p>
+          <div className="mt-8 flex justify-center md:justify-start">
+            <a 
+              href="/resume.pdf" 
+              download="Alisa_CV.pdf"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-violet-600 text-white font-semibold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(6,182,212,0.6)] hover:scale-105 transition-all duration-300"
+            >
+              <FaDownload className="text-lg" />
+              Download CV
+            </a>
+          </div>
         </div>
       </motion.div>
     </section>

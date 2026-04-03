@@ -20,7 +20,7 @@ export default function Navbar() {
         
         <div className="hidden lg:flex items-center gap-4 bg-gray-900/60 rounded-full px-3 py-1.5 border border-gray-700/50 shadow-inner">
           <ul className="flex items-center gap-1 text-sm font-semibold tracking-wide">
-            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'About', 'Education', 'Skills', 'Projects', 'Contact'].map((item) => (
               <motion.li key={item} whileHover={{ scale: 1.05 }}>
                 <a 
                   href={`#${item.toLowerCase()}`} 
